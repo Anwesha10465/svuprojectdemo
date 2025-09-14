@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Role-Based Dashboard</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <!-- Login Page -->
+  <div id="loginPage" class="page">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <input type="text" id="username" placeholder="Enter Username" required>
+      <input type="password" id="password" placeholder="Enter Password" required>
+      <button type="submit">Login</button>
+    </form>
+    <p class="info">Demo Accounts:<br>
+      Admin → admin/admin123<br>
+      Contributor → contributor/cont123<br>
+      Reader → reader/read123<br>
+      Viewer → viewer/view123
+    </p>
+  </div>
+
+  <!-- Dashboard Page -->
+  <div id="dashboardPage" class="page hidden">
+    <h2>Dashboard</h2>
+    <p id="welcomeMsg"></p>
+    <nav>
+      <button id="adminSection" class="role-section hidden">Admin Panel</button>
+      <button id="contributorSection" class="role-section hidden">Contributor Tools</button>
+      <button id="readerSection" class="role-section hidden">Reader Library</button>
+      <button id="viewerSection" class="role-section hidden">Viewer Access</button>
+    </nav>
+    <br>
+    <button id="logoutBtn">Logout</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
